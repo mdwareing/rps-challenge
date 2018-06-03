@@ -1,12 +1,8 @@
 class Player
-    attr_reader :name, :option
-    attr_accessor :choice
+    attr_reader :name
+    attr_accessor :option
     def initialize name
         @name = name
-        @option = option
-    end
-
-    def choice option
-        @option = option.to_sym
+        @option = nil
     end
 end

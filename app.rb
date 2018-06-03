@@ -2,6 +2,7 @@ require 'sinatra/base'
 require './lib/player.rb'
 require './lib/computer.rb'
 require './lib/game.rb'
+
 class RockPaperScissors < Sinatra::Base
     enable :sessions
     
@@ -27,7 +28,7 @@ class RockPaperScissors < Sinatra::Base
     end
 
     post '/choice' do
-        session[:player].choice(params[:option])
+        session[:player].option = params[:option].to_sym
         redirect '/result'
     end
 
