@@ -1,0 +1,25 @@
+<h1>Pick options</h1>
+<form method="post" action="/choice">
+    <%= @player.name %> vs. Computer
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="option" value="rock">
+    <label class="form-check-label" for="rock">
+        Rock
+    </label>
+    </div>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="option" value="paper">
+    <label class="form-check-label" for="paper">
+        Paper
+    </label>
+    </div>
+
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="option" value="scissors">
+    <label class="form-check-label" for="scissors">
+        Scissors
+    </label>
+
+    <div><input type="submit" value="Submit"></div>
+    </div>
+</form>

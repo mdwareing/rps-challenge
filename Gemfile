@@ -4,6 +4,7 @@ ruby '2.5.0'
 
 gem 'rake'
 gem 'sinatra'
+gem 'bootstrap-sass', '3.3.7'
 
 group :test do
   gem 'capybara'
